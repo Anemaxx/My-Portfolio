@@ -1,0 +1,210 @@
+body{
+    background-color: rgb(120, 120, 120);
+    font-family: monospace;
+}
+
+.jmeno{
+    text-align: center;
+    font-size: 40px;
+    border-bottom: solid 2px rgb(165, 165, 165);
+    margin-bottom: 80px;
+}
+
+.profilovka img{
+    height: 200px;
+    width: 250px;
+    border-radius: 100px;
+    box-shadow:0px 0px 50px 20px rgb(182, 182, 182);
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+nav{
+    background-color: rgb(99, 99, 99);
+    border: solid rgb(165, 165, 165) 3px;
+    border-radius: 10px;
+    margin-left:  20vw;
+    margin-right: 20vw;
+    margin-top: 50px;
+    text-align: center;
+}
+nav h2{
+    font-size: 35px;
+}
+nav p{
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+    gap: 30px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: larger;
+}
+.ig{
+    background: linear-gradient(to right, rgb(254,218,117), rgb(250,126,30), rgb(214,41,118), rgb(150,47,191), rgb(79,91,213));
+    border-radius: 7px;
+    padding: 3px;
+}
+.steam{
+    background: linear-gradient(to right,rgb(0, 0, 87) , rgb(58, 104, 255));
+    background-color: rgb(85, 100, 135);
+    border-radius: 7px;
+    padding: 3px;
+}
+.git{
+    background: linear-gradient(to right, black, grey);
+    border-radius: 7px;
+    padding: 3px;
+}
+@media (min-width: 125px) and (max-width:479px){
+    .buttons{
+        opacity: 0;
+        height: 0px;
+        width: 0px;
+        }
+}
+.ig:hover, 
+.steam:hover,
+.git :hover{
+    opacity: 0.6;
+}
+
+
+.cara{
+    width: 35px;
+    height: 5px;
+    background-color: rgb(41, 41, 41);
+    margin-top: 8px;
+    opacity: 0;
+}
+@media (min-width: 125px) and (max-width:479px){
+    .cara{
+        opacity: 1;
+    }
+}
+
+.portfolium-nadpis{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+
+.projekty{
+    border: solid rgb(165, 165, 165) 3px;
+    border-radius: 10px;
+    margin: 50px;
+}
+.projekty img{
+    height: 275px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+.projekty-nadpis{
+    text-align: center;
+    font-size: 30px;
+}
+.samostatne-projekty{
+    background-color: rgb(99, 99, 99);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: solid 3px rgb(165, 165, 165);
+}
+.samostatne-projekty p{
+    margin-bottom: 40px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.samostatne-projekty h3{
+    font-size: 30px;
+}
+@media (min-width: 125px) and (max-width: 1299px){
+    .samostatne-projekty{
+        grid-template-columns: 1fr;
+    }
+    .projekt1 p{
+        margin-bottom: 150px;
+    }
+}
+@media (min-width: 1300px){
+    .samostatne-projekty{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 649px ){
+    .projekty img{
+        height: 175px;
+        width: 350px;
+    }
+}
+
+footer h2{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.feedback{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px;
+}
+
+.email{
+    width: 300px;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.number{
+    width: 300px;
+    height: 25px;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.text{
+    width: 300px;
+    height: 100px;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.send{
+    width: 100px;
+    height: 30px;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+.email::placeholder{
+    color: black;
+}
+.number::placeholder{
+    color: black;
+}
+.text::placeholder{
+    color: black;
+}
+.send::placeholder{
+    color: black;
+}
+
+.send:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
